@@ -1,0 +1,35 @@
+@media(max-width:1366px) {
+   .wrapper {
+      padding: 7% 10%;
+   }
+   .section-box {
+      margin-bottom: 25px;
+   }
+   #info-bar {
+      display: block;
+      width: 100%;
+      background-color: #4c67e4;
+      height: 70px;
+      margin-bottom: 25px;
+      border-radius: 20px;
+   }
+   .left-wrapper {
+      display: none;
+   }
+   .right-wrapper {
+      width: 100%;
+   }
+}
+
+@media(max-width: 768px) {
+   .wrapper {
+      padding: 4%;
+   }
+   .section-box {
+      margin-bottom: 5%;
+   }
+   #info-bar {
+      margin-bottom: 15px;
+      height: 55px;
+   }
+}
