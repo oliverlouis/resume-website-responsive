@@ -1,17 +1,34 @@
-@media(max-width:1366px) {
-   .wrapper {
+@media(max-width:1450px) {
+   .main-wrapper {
       padding: 7% 10%;
    }
    .section-box {
       margin-bottom: 25px;
    }
+   #im-oliver {
+      height: 100%;
+   }
    #info-bar {
       display: block;
       width: 100%;
+      padding: 2% 4%;
       background-color: #4c67e4;
-      height: 70px;
+      height: 80px;
       margin-bottom: 25px;
       border-radius: 20px;
+   }
+   .info-bar-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   #info-bar h1 {
+      margin-bottom: 0;
+   }
+   .social-icons-im-oliver {
+      display: inline-flex;
    }
    .left-wrapper {
       display: none;
@@ -19,10 +36,16 @@
    .right-wrapper {
       width: 100%;
    }
+   .about-me-left-wrapper {
+      width: 100%;
+   }
+   .about-me-right-wrapper {
+      width: 100%;
+   }
 }
 
 @media(max-width: 768px) {
-   .wrapper {
+   .main-wrapper {
       padding: 4%;
    }
    .section-box {
@@ -31,5 +54,42 @@
    #info-bar {
       margin-bottom: 15px;
       height: 55px;
+   }
+   .about-me-left-wrapper {
+      width: 100%;
+   }
+   .about-me-right-wrapper {
+      width: 100%;
+   }
+   #about-me .wrapper {
+      padding: 0;
+   }
+   .left-contact-wrapper {
+      width: 100%;
+   }
+   .right-contact-wrapper {
+      width: 100%;
+   }
+}
+
+@media(max-width: 812px) {
+   #im-oliver h1 {
+      font-size: 50px;
+      line-height: 1;
+   }
+}
+
+@media(max-width: 375px) {
+   #info-bar p {
+      display: none;
+   }
+   .bio {
+      display: block;
+   }
+   .left-skills-wrapper {
+      width: 100%;
+   }
+   .right-skills-wrapper {
+      width: 100%;
    }
 }
