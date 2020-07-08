@@ -475,7 +475,11 @@ textarea {
    background-color: #ee5356
 }
 
-.contact-form form textarea::placeholder {
+textarea {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea::placeholder {
    font-family: Arial, Helvetica, sans-serif;
    padding: 15px 0;
 }
