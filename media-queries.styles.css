@@ -1,4 +1,4 @@
-@media(max-width:1450px) {
+@media(max-width:1400px) {
    .main-wrapper {
       padding: 7% 10%;
    }
@@ -29,6 +29,7 @@
    }
    .social-icons-im-oliver {
       display: inline-flex;
+      margin-top: 10px;
    }
    .left-wrapper {
       display: none;
@@ -47,12 +48,16 @@
 @media(max-width: 1200px) {
    .view-work {
       display: flex;
+      width: 300px;
       flex-direction: column;
       margin-top: 2em;
    }
    .view-work-box {
-      width: 40%;
+      width: 100%;
       margin-bottom: 1em;
+   }
+   #im-oliver .text-container h1 {
+      margin-bottom: 15px;
    }
 }
 
@@ -66,6 +71,10 @@
 @media(max-width: 768px) {
    .main-wrapper {
       padding: 4%;
+   }
+   .view-work-box {
+      /* width: 40%; */
+      margin-bottom: 1em;
    }
    .section-box {
       margin-bottom: 5%;
@@ -91,6 +100,16 @@
    }
 }
 
+@media(max-width: 500px) {
+   .view-work {
+      width: 50%;
+   }
+   .view-work-box {
+      width: 40%;
+      margin-bottom: 1em;
+   }
+}
+
 @media(max-width: 375px) {
    #info-bar p {
       display: none;
@@ -102,6 +121,9 @@
       width: 100%;
    }
    .right-skills-wrapper {
+      width: 100%;
+   }
+   .view-work {
       width: 100%;
    }
    .view-work-box {
