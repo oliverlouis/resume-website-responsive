@@ -102,11 +102,20 @@
 
 @media(max-width: 500px) {
    .view-work {
-      width: 50%;
+      width: 300px;
    }
    .view-work-box {
-      width: 40%;
+      width: 100%;
       margin-bottom: 1em;
+   }
+   .bio {
+      flex-direction: column;
+   }
+   .bio-left {
+      width: 100%;
+   }
+   .bio-right {
+      width: 100%;
    }
 }
 

@@ -295,9 +295,18 @@ a {
 }
 
 .bio {
-   /* display: flex;
-   flex-wrap: wrap; */
+   display: flex;
+   justify-content: space-between;
    margin-top: 30px;
+   width: 100%;
+}
+
+.bio-left {
+   width: 40%;
+}
+
+.bio-right {
+   width: 60%;
 }
 
 .bio p {
@@ -390,7 +399,7 @@ a {
 .progress-html {
    background-color: #fd5b5d;
    height: 6px;
-   width: 85%;
+   width: 80%;
 }
 
 .progress-css {
@@ -402,19 +411,19 @@ a {
 .progress-javascript {
    background-color: #fd5b5d;
    height: 6px;
-   width: 65%;
+   width: 60%;
 }
 
 .progress-node {
    background-color: #fd5b5d;
    height: 6px;
-   width: 65%;
+   width: 60%;
 }
 
 .progress-express {
    background-color: #fd5b5d;
    height: 6px;
-   width: 70%;
+   width: 65%;
 }
 
 .progress-react {
