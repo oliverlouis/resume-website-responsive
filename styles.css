@@ -398,8 +398,8 @@ a {
 
 .progress-html {
    background-color: #fd5b5d;
-   height: 6px;
    width: 80%;
+   height: 6px;
 }
 
 .progress-css {
@@ -417,7 +417,7 @@ a {
 .progress-node {
    background-color: #fd5b5d;
    height: 6px;
-   width: 60%;
+   width: 85%;
 }
 
 .progress-express {
@@ -435,7 +435,7 @@ a {
 .progress-bootstrap {
    background-color: #fd5b5d;
    height: 6px;
-   width: 85%;
+   width: 80%;
 }
 
 .progress-mongo {
