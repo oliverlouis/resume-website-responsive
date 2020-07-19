@@ -164,16 +164,24 @@ a {
 }
 
 #im-oliver button {
-   margin: 30px 0;
+   margin: 15px auto;
    background-color: #fd5b5d;
-   font-size: 18px;
+   font-size: 14px;
    color: whitesmoke;
-   width: 190px;
-   height: 50px;
+   width: 150px;
+   height: 40px;
    border: none;
-   border-radius: 60px;
+   border-radius: 20px;
    outline: none;
    cursor: pointer;
+}
+
+.repo-btn {
+   text-align: center;
+}
+
+.view-work-box .fab {
+   margin-right: 10px;
 }
 
 .view-projects {
@@ -196,11 +204,25 @@ a {
 .view-work-box {
    position: relative;
    width: 100%;
+   /* height: 160px; */
+   border-radius: 15px;
+}
+
+.view-work-image-container {
    height: 160px;
    border-radius: 15px;
    -webkit-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
    -moz-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
    box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
+}
+
+.view-work-image-container:hover {
+   transform: scale(1.02);
+   background-color: white;
+}
+
+.view-work-box .fab {
+   font-size: 15px;
 }
 
 .project-description {
@@ -211,7 +233,7 @@ a {
    width: 80%;
    padding: 3%;
    position: absolute;
-   bottom: 30%;
+   bottom: 50%;
    left: 10%;
 }
 
@@ -567,4 +589,8 @@ textarea::placeholder {
 #contact textarea:focus {
    outline: none;
    border: 1px solid #fd5b5d;
+}
+
+button:hover {
+   transform: scale(0.98);
 }
