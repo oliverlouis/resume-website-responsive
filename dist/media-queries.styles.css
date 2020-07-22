@@ -120,6 +120,9 @@
    .bio-right {
       width: 100%;
    }
+   #info-bar p {
+      display: none;
+   }
 }
 
 @media(max-width: 375px) {

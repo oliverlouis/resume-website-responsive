@@ -64,6 +64,7 @@ a {
 #info-section .img-container img {
    background-position: center;
    width: 100%;
+   border-radius: 50%;
 }
 
 .dot {
@@ -152,7 +153,7 @@ a {
 }
 
 #im-oliver .text-container {
-   width: 80%;
+   width: 85%;
 }
 
 #im-oliver .text-container h1 {
@@ -293,11 +294,13 @@ a {
 #about-me .img-container-about-me {
    width: 190px;
    height: 190px;
+   border-radius: 100%;
 }
 
 #about-me .img-container-about-me img {
    background-position: center;
    width: 100%;
+   border-radius: 100%;
 }
 
 .about-me-text {
