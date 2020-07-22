@@ -160,16 +160,16 @@
                         <p class="percent">80%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-html"></div>
+                        <span style="width: 80%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
                      <div class="skill-heading">
-                        <h4>CSS</h4>
+                        <h4>CSS / Sass</h4>
                         <p class="percent">80%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-css"></div>
+                        <span style="width: 80%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -178,7 +178,7 @@
                         <p class="percent">60%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-javascript"></div>
+                        <span style="width: 60%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -187,7 +187,7 @@
                         <p class="percent">60%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-node"></div>
+                        <span style="width: 60%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -196,7 +196,7 @@
                         <p class="percent">65%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-express"></div>
+                        <span style="width: 65%;"></span>
                      </div>
                   </div>
                </div>
@@ -207,7 +207,7 @@
                         <p class="percent">45%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-react"></div>
+                        <span style="width: 45%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -216,7 +216,7 @@
                         <p class="percent">85%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-bootstrap"></div>
+                        <span style="width: 85%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -225,7 +225,7 @@
                         <p class="percent">40%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-mongo"></div>
+                        <span style="width: 40%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -234,16 +234,16 @@
                         <p class="percent">50%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-jquery"></div>
+                        <span style="width: 50%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
                      <div class="skill-heading">
-                        <h4>Git/GitHub</h4>
+                        <h4>Git / GitHub</h4>
                         <p class="percent">80%</p>
                      </div>
                      <div class="fullbar">
-                        <div class="progress-git"></div>
+                        <span style="width: 80%;"></span>
                      </div>
                   </div>
                </div>
@@ -307,7 +307,39 @@
             }, 500);
          }
          return false;
-      })
+      });
+
+
+
+
+      $(function () {
+
+         var $meters = $(".fullbar > span");
+         var $section = $('#skills');
+         // var $queue = $({});
+
+         function loadDaBars() {
+            $meters.each(function () {
+               var $el = $(this);
+               var origWidth = $el.width();
+               $el.width(0);
+
+               $el.animate({ width: origWidth }, 1500);
+
+            });
+         }
+
+         $(document).bind('scroll', function (ev) {
+            var scrollOffset = $(document).scrollTop();
+            var containerOffset = $section.offset().top - window.innerHeight;
+            if (scrollOffset > containerOffset) {
+               loadDaBars();
+               // unbind event not to load scrolsl again
+               $(document).unbind('scroll');
+            }
+         });
+
+      });
 
    </script>
    <script src="./index.js"></script>

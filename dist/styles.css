@@ -413,69 +413,22 @@ a {
 .fullbar {
    width: 100%;
    border-radius: 5px;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
    height: 6px;
    margin-top: 10px;
    background-color: rgb(250, 250, 250);
+   position: relative;
 }
 
-.progress-html {
+.fullbar span {
    background-color: #fd5b5d;
+   height: 6px;
+   border-radius: 8px;
    width: 80%;
-   height: 6px;
-}
-
-.progress-css {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 80%;
-}
-
-.progress-javascript {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 60%;
-}
-
-.progress-node {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 60%;
-}
-
-.progress-express {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 65%;
-}
-
-.progress-react {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 45%;
-}
-
-.progress-bootstrap {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 80%;
-}
-
-.progress-mongo {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 40%;
-}
-
-.progress-jquery {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 50%;
-}
-
-.progress-git {
-   background-color: #fd5b5d;
-   height: 6px;
-   width: 80%;
+   position: relative;
+   overflow: hidden;
+   display: block;
 }
 
 #contact {
