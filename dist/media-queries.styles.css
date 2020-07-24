@@ -141,8 +141,15 @@
    .bio-left {
       width: 100%;
    }
+   .bio-left p {
+      margin: 5px 0;
+   }
    .bio-right {
       width: 100%;
+      line-height: 1.3;
+   }
+   .bio-right p {
+      margin: 5px 0;
    }
    #info-bar p {
       display: none;
