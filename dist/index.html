@@ -13,6 +13,8 @@
 
    <!-- GOOGLE FONTS -->
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
 
    <!-- FONT AWESOME -->
    <script src="https://kit.fontawesome.com/64aa589b08.js" crossorigin="anonymous"></script>
@@ -64,6 +66,7 @@
 
          <div id="im-oliver" class="section-box">
             <div class="text-container">
+               <h1>Hello<span class="dot">,</span></h1>
                <h1>I'm Oliver<span class="dot">.</span></h1>
                <p>Front-end Web Developer based in Hamburg.</p>
                <p>I design modern and responsive websites.</p>
@@ -71,43 +74,6 @@
                   <div class="icon-circle"><a href="https://github.com/oliverlouis"><i class="fab fa-github"></i></a></div>
                   <div class="icon-circle"><a href="https://www.linkedin.com/in/oliver-louis-66687862/"><i class="fab fa-linkedin-in"></i></a></div>
                   <div class="icon-circle"><a href="https://www.xing.com/profile/Oliver_Louis/cv"><i class="fab fa-xing"></i></a></div>
-               </div>
-            </div>
-            <div class="header section-header-white view-projects">
-               <h4>View Projects</h4>
-               <div class="dash"></div>
-            </div>
-            <div class="view-work">
-               <div class="view-work-box">
-                  <div class="view-work-image-container photon">
-                     <a href="https://photonblog.herokuapp.com/"><img class="view-work-img-photon" src="./Photon.jpg" alt="">
-                  </div>
-                  <button class="repo-btn"><a href="https://github.com/oliverlouis/photonPhotographyBlog"><i class="fab fa-github"></i>View on GitHub</a></button>
-                  <div class="project-description photon-desc">
-                     <h3>Photon - Photography blog</h3>
-                  </div>
-                  </a>
-               </div>
-               <div class="view-work-box">
-                  <div class="view-work-image-container rawr">
-                     <a href="https://oliverlouis.github.io/Rawr-Restaurant-Landing-Page/"><img class="view-work-img view-work-img-rawr" src="./Rawr.jpg" alt="">
-                  </div>
-                  <button class="repo-btn"><a href="https://github.com/oliverlouis/Rawr-Restaurant-Landing-Page"><i class="fab fa-github"></i>View on GitHub</a></button class="repo-btn">
-                  <div class="project-description rawr-desc">
-                     <h3>Rawr - Restaurant landing page</h3>
-                  </div>
-                  </a>
-               </div>
-               <div class="view-work-box">
-                  <div class="view-work-image-container forkify">
-                     <a href="https://flamboyant-austin-939dbf.netlify.app/"><img class="view-work-img view-work-img-forkify" src="./Forkify.jpg" alt="">
-                  </div>
-                  <button class="repo-btn"><a href="https://github.com/oliverlouis/forkify"><i class="fab fa-github"></i>View on GitHub</a></button>
-                  <div class="project-description forkify-desc">
-                     <h3>Forkify - Recipe finder</h3>
-                  </div>
-                  </a>
-
                </div>
             </div>
          </div>
@@ -256,6 +222,50 @@
             </div>
          </div>
 
+         <div id="projects" class="section-box">
+            <div class="header">
+               <h4 class="section-header">Projects</h4>
+               <div class="dash"></div>
+            </div>
+            <div class="project-wrapper">
+
+               <div class="project">
+                  <img src="./Photon.jpg" alt="">
+                  <div class="description-and-buttons">
+                     <p>Photon is photography blog website built in Node.js, Express.js and MongoDB as a database. Users may log in or sign up on the page. Once logged in, users can post their own blogs and/or comment on existing blogs.</p>
+                     <div class="buttons">
+                        <button class="demo-btn"><a href="https://photonblog.herokuapp.com/">View Demo</a></button>
+                        <button class="repo-btn"><a href="https://github.com/oliverlouis/photonPhotographyBlog">View Code</a></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <img src="./Rawr.jpg" alt="">
+                  <div class="description-and-buttons">
+                     <p>A landing page for a restaurant titled "Rawr". Rawr is is a clean and alternative, healthy lifestyle restaurant. The webpage design and color palette reflect the mission statement of this restaurant.</p>
+                     <div class="buttons">
+                        <button class="demo-btn"><a href="https://oliverlouis.github.io/Rawr-Restaurant-Landing-Page/">View Demo</a></button>
+                        <button class="repo-btn"><a href="https://github.com/oliverlouis/Rawr-Restaurant-Landing-Page">View Code</a></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <img src="./Forkify.jpg" alt="">
+                  <div class="description-and-buttons">
+                     <p>Forkify is a recipe search application. Searching for an ingredient triggers and API call which returns all related recipes. Users may save recipes to a "liked" section for later referral. User may also add recipe ingredients to a shopping list and choose the number of servings which inturn updates the shopping list quantities.</p>
+                     <div class="buttons">
+                        <button class="demo-btn"><a href="https://flamboyant-austin-939dbf.netlify.app/">View Demo</a></button>
+                        <button class="repo-btn"><a href="https://github.com/oliverlouis/forkify">View Code</a></button>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
 
          <div id="contact" class="section-box">
             <div class="header">
@@ -318,34 +328,36 @@
 
 
 
-      $(function () {
+      // $(function () {
 
-         var $meters = $(".fullbar > span");
-         var $section = $('#skills');
-         // var $queue = $({});
+      //    var $meters = $(".fullbar span");
+      //    var $section = $('#skills');
+      //    // var $queue = $({});
 
-         function loadDaBars() {
-            $meters.each(function () {
-               var $el = $(this);
-               var origWidth = $el.width();
-               $el.width(0);
+      //    function loadDaBars() {
+      //       $meters.each(function () {
+      //          var $el = $(this);
+      //          var origWidth = $el.width();
+      //          $el.width(0);
 
-               $el.animate({ width: origWidth }, 1500);
+      //          $el.animate({ width: origWidth }, 1500);
 
-            });
-         }
+      //       });
 
-         $(document).bind('scroll', function (ev) {
-            var scrollOffset = $(document).scrollTop();
-            var containerOffset = $section.offset().top - window.innerHeight;
-            if (scrollOffset > containerOffset) {
-               loadDaBars();
-               // unbind event not to load scrolsl again
-               $(document).unbind('scroll');
-            }
-         });
+      //    }
 
-      });
+      //    $(document).bind('scroll', function (ev) {
+      //       var scrollOffset = $(document).scrollTop();
+      //       var containerOffset = $section.offset().top - window.innerHeight;
+      //       if (scrollOffset > containerOffset) {
+      //          loadDaBars();
+      //          // unbind event not to load scrolsl again
+      //          // $(document).unbind('scroll');
+      //       }
+      //       $(document).unbind('scroll');
+      //    });
+
+      // });
 
    </script>
 

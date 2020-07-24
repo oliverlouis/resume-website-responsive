@@ -9,7 +9,7 @@
       height: 100%;
    }
    #im-oliver {
-      padding-bottom: 5%;
+      padding-bottom: 20%;
    }
    #info-bar {
       display: block;
@@ -49,18 +49,24 @@
 }
 
 @media(max-width: 1200px) {
-   .view-work {
-      display: flex;
-      width: 300px;
-      flex-direction: column;
-      margin-top: 2em;
-   }
-   .view-work-box {
-      width: 100%;
-      margin-bottom: 1em;
-   }
    #im-oliver .text-container h1 {
       margin-bottom: 15px;
+   }
+}
+
+@media(max-width: 1099px) {
+   .project {
+      flex-direction: column;
+   }
+   .project img {
+      margin-bottom: 20px;
+   }
+   .description-and-buttons p {
+      margin-bottom: 20px;
+      margin-left: 0;
+   }
+   #projects button {
+      margin-left: 0;
    }
 }
 
@@ -101,6 +107,24 @@
    .right-contact-wrapper {
       width: 100%;
    }
+   #projects img {
+      width: 100%;
+   }
+   .description-and-buttons {
+      width: 90%;
+   }
+}
+
+@media(max-width: 650px) {
+   .skills-wrapper {
+      flex-direction: column;
+   }
+   .left-skills-wrapper {
+      width: 100%;
+   }
+   .right-skills-wrapper {
+      width: 100%;
+   }
 }
 
 @media(max-width: 500px) {
@@ -123,6 +147,9 @@
    #info-bar p {
       display: none;
    }
+   .description-and-buttons {
+      width: 100%;
+   }
 }
 
 @media(max-width: 375px) {
@@ -132,17 +159,14 @@
    .bio {
       display: block;
    }
-   .left-skills-wrapper {
-      width: 100%;
-   }
-   .right-skills-wrapper {
-      width: 100%;
-   }
    .view-work {
       width: 100%;
    }
    .view-work-box {
       width: 100%;
       margin-bottom: 1em;
+   }
+   .buttons {
+      justify-content: space-between;
    }
 }
