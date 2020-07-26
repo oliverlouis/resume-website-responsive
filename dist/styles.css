@@ -451,6 +451,12 @@ a {
    margin-top: 50px;
    display: flex;
    align-items: center;
+   padding: 25px;
+   border-radius: 25px;
+   background-color: white;
+   -webkit-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.2);
 }
 
 #projects img {
@@ -462,12 +468,12 @@ a {
 }
 
 #projects button {
-   padding: 15px;
+   padding: 8px;
    background-color: white;
-   font-size: 16px;
+   font-size: 14px;
    color: #fd5b5d;
-   width: 45%;
-   height: 50px;
+   width: 8rem;
+   height: 45px;
    border: 2px solid #fd5b5d;
    border-radius: 25px;
    outline: none;
@@ -492,15 +498,20 @@ a {
 
 .buttons {
    display: flex;
-   justify-content: space-around;
+   width: 80%;
 }
 
 #projects .demo-btn {
-   background-color: #fd5b5d;
+   border: none;
+   background-color: white;
+   -webkit-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
+   -moz-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.2);
+   margin-right: 10px;
 }
 
 #projects .demo-btn a {
-   color: white;
+   color: #fd5b5d;
 }
 
 #projects .repo-btn a {
