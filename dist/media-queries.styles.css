@@ -109,6 +109,7 @@
    }
    #projects img {
       width: 100%;
+      margin-right: 0;
    }
    .description-and-buttons {
       width: 90%;
@@ -175,5 +176,8 @@
    }
    .buttons {
       justify-content: space-between;
+   }
+   #projects>.cta-container>.cta-btn {
+      width: 100%;
    }
 }

@@ -461,6 +461,7 @@ a {
 
 #projects img {
    width: 350px;
+   margin-right: 20px;
    border-radius: 20px;
    -webkit-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
    -moz-box-shadow: 0px 0px 30px -1px rgba(0, 0, 0, 0.5);
@@ -478,7 +479,10 @@ a {
    border-radius: 25px;
    outline: none;
    cursor: pointer;
-   margin-left: 20px;
+}
+
+.cta-container {
+   width: 100%;
 }
 
 .description-and-buttons {
@@ -491,7 +495,7 @@ a {
 
 .description-and-buttons p {
    margin-bottom: 20px;
-   margin-left: 20px;
+   /* margin-left: 20px; */
    color: rgb(109, 108, 108);
    line-height: 1.5;
 }
@@ -526,6 +530,22 @@ a {
    font-weight: bold;
    height: 100%;
    margin: auto 0;
+}
+
+#projects>.cta-container>.cta-btn {
+   width: 15rem;
+   /* margin-top: 35px; */
+   margin-top: 35px;
+}
+
+.cta-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cta-btn a {
+   color: #fd5b5d;
 }
 
 .project-image img {
