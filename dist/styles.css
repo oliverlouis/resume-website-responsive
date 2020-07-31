@@ -21,6 +21,20 @@ a {
    /* color: white; */
 }
 
+.btn {
+   transition: all .2s;
+}
+
+.btn:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+   transform: translateY(-1px);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
 .left-wrapper {
    float: left;
    height: 100%;
@@ -180,6 +194,18 @@ a {
    cursor: pointer;
 }
 
+#im-oliver .main-heading {
+   animation: moveInLeft 1s ease-out;
+}
+
+#im-oliver .main-heading-2 {
+   animation: moveInRight 1s ease-out;
+}
+
+#im-oliver .main-p {
+   animation: fadeIn 3s ease-out;
+}
+
 .repo-btn {
    text-align: center;
 }
@@ -288,6 +314,7 @@ a {
 
 .about-me-left-wrapper {
    width: 20%;
+   margin-bottom: 30px;
 }
 
 .about-me-right-wrapper {
@@ -669,4 +696,44 @@ textarea {
 
 button:hover {
    transform: scale(0.98);
+}
+
+@keyframes moveInLeft {
+   0% {
+      opacity: 0;
+      transform: translateX(-100px);
+   }
+   80% {
+      transform: translateX(10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translate(0)
+   }
+}
+
+@keyframes moveInRight {
+   0% {
+      opacity: 0;
+      transform: translateX(100px);
+   }
+   80% {
+      transform: translateX(-10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translate(0)
+   }
+}
+
+@keyframes fadeIn {
+   0% {
+      opacity: 0;
+   }
+   30% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
 }
