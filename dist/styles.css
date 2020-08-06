@@ -12,7 +12,7 @@
 
 body {
    background-color: #f6f7ff;
-   font-family: 'Ubuntu', sans-serif;
+   font-family: 'Lato', sans-serif;
    color: #ffff;
 }
 
@@ -175,6 +175,7 @@ a {
 #im-oliver .text-container h1 {
    font-size: 5rem;
    line-height: 1.1;
+   font-weight: 900;
 }
 
 #im-oliver .text-container p {
