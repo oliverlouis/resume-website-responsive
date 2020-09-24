@@ -1,3 +1,13 @@
+:root {
+   --primary-color: #282f44;
+   --secondary-color: #e6af2e;
+   --secondary-hover-color: #eebc46;
+   --font-color: #dadae6;
+   --bar-color: #b4b4c2;
+   --original-blue: #4c67e4;
+   --original-red: #fd5b5d;
+}
+
 @media(max-width:1300px) {
    .main-wrapper {
       padding: 7% 10%;
@@ -9,13 +19,22 @@
       height: 100%;
    }
    #im-oliver {
-      padding-bottom: 20%;
+      padding: 15% 10% 20% 15%;
+   }
+   #im-oliver .text-container {
+      display: block;
+   }
+   #im-oliver .slider-background {
+      display: none;
+   }
+   .arrow-box {
+      display: none;
    }
    #info-bar {
       display: block;
       width: 100%;
       padding: 2% 4%;
-      background-color: #4c67e4;
+      background-color: #282f44;
       height: 80px;
       margin-bottom: 25px;
       border-radius: 20px;

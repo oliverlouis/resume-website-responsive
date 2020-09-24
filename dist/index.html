@@ -17,7 +17,8 @@
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
 
-
+   <!-- ANIMATE CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
    <!-- FONT AWESOME -->
    <script src="https://kit.fontawesome.com/64aa589b08.js" crossorigin="anonymous"></script>
@@ -39,11 +40,14 @@
       <div class="left-wrapper">
 
          <div id="info-section">
-            <div class="img-container">
+            <!-- <div class="img-container">
                <img src="./Oli-Bewerbungsfoto.jpg" alt="">
+            </div> -->
+            <div class="div">
+               <h1>Oliver Louis<span class="dot">.</span></h1>
+               <p>Front-end Web Developer</p>
             </div>
-            <h1>Oliver Louis<span class="dot">.</span></h1>
-            <p>Front-end Web Developer</p>
+
             <ul class="categories">
                <li><a class="scrollTo" href="#im-oliver"><i class="fas fa-home side-icons"></i>Home</a></li>
                <li><a class="scrollTo" href="#about-me"><i class="fas fa-user side-icons"></i>About</a></li>
@@ -68,15 +72,35 @@
          </div>
 
          <div id="im-oliver" class="section-box">
+
+            <div class="slider-background">
+               <div class="slider-image-container">
+                  <img src="./Oli-Bewerbungsfoto.jpg" alt="">
+               </div>
+               <h1 class="slider-oliver">I'm Oliver<span>.</span></h1>
+
+               <h1 class="slider-hello">Hello<span>,</span></h1>
+
+            </div>
+
+
             <div class="text-container">
                <h1 class="main-heading">Hello<span class="dot">,</span></h1>
                <h1 class="main-heading-2">I'm Oliver<span class="dot">.</span></h1>
                <p class="main-p">Front-end Web Developer based in Hamburg.</p class="main-p">
                <p class="main-p">I design modern and responsive websites.</p>
+
+
+
                <div class="social-icons social-icons-im-oliver">
                   <div class="icon-circle"><a href="https://github.com/oliverlouis"><i class="fab fa-github"></i></a></div>
                   <div class="icon-circle"><a href="https://www.linkedin.com/in/oliver-louis-66687862/"><i class="fab fa-linkedin-in"></i></a></div>
                   <div class="icon-circle"><a href="https://www.xing.com/profile/Oliver_Louis/cv"><i class="fab fa-xing"></i></a></div>
+               </div>
+               <div class="arrow-box">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                </div>
             </div>
          </div>
@@ -187,6 +211,15 @@
                   </div>
                   <div class="skill-div">
                      <div class="skill-heading">
+                        <h4>Vue.js</h4>
+                        <p class="percent">60%</p>
+                     </div>
+                     <div class="fullbar">
+                        <span style="width: 60%;"></span>
+                     </div>
+                  </div>
+                  <div class="skill-div">
+                     <div class="skill-heading">
                         <h4>Bootstrap</h4>
                         <p class="percent">85%</p>
                      </div>
@@ -201,15 +234,6 @@
                      </div>
                      <div class="fullbar">
                         <span style="width: 40%;"></span>
-                     </div>
-                  </div>
-                  <div class="skill-div">
-                     <div class="skill-heading">
-                        <h4>jQuery</h4>
-                        <p class="percent">50%</p>
-                     </div>
-                     <div class="fullbar">
-                        <span style="width: 50%;"></span>
                      </div>
                   </div>
                   <div class="skill-div">
@@ -244,12 +268,34 @@
                </div>
 
                <div class="project">
+                  <img src="./Homeswap.jpg" alt="">
+                  <div class="description-and-buttons">
+                     <p>Home Swap is a booking web app where two users who are traveling to each other's cities at the same time can swap homes for the duration of their stay and therefore need no room and board budget.</p>
+                     <div class="buttons">
+                        <button class="demo-btn btn"><a href="https://homeswapapp.netlify.app/">View Demo</a></button>
+                        <button class="repo-btn btn"><a href="https://github.com/oliverlouis/home-swap">View Code</a></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
                   <img src="./natours.jpg" alt="">
                   <div class="description-and-buttons">
                      <p>Natours is a tour booking website built using html and Sass. Users may browse different types of tours and get information regarding the tours. This demo is a purely visual experience of how this landing page would behave.</p>
                      <div class="buttons">
                         <button class="demo-btn btn"><a href="https://naturetoursapp.netlify.app/">View Demo</a></button>
                         <button class="repo-btn btn"><a href="https://github.com/oliverlouis/natours">View Code</a></button>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="project">
+                  <img src="./nexter.jpg" alt="">
+                  <div class="description-and-buttons">
+                     <p>Nexter is a real estate landing page built almost entirely with CSS Grid. The page models an elegant look, from the color scheme to the layout, as it is a hub for luxury homes.</p>
+                     <div class="buttons">
+                        <button class="demo-btn btn"><a href="https://nexter-real-estate.netlify.app/">View Demo</a></button>
+                        <button class="repo-btn btn"><a href="https://github.com/oliverlouis/nexter">View Code</a></button>
                      </div>
                   </div>
                </div>
